@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPractice
 {
-    public class Truck : Car
+    public class Truck : Vehicle
     {
         public Truck(string name, float speed) : base(name, speed)
         {

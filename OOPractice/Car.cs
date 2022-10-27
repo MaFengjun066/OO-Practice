@@ -1,20 +1,10 @@
 ﻿namespace OOPractice
 {
     using System;
-    public class Car
+    public class Car : Vehicle
     {
-        private string name;
-        private float speed;
-
-        public Car(string name, float speed)
+        public Car(string name, float speed) : base(name, speed)
         {
-            this.name = name;
-            this.speed = speed;
-        }
-
-        public string SpeedUp()
-        {
-            return $"{name}: speed up {speed} km/h";
         }
     }
 }
