@@ -8,8 +8,10 @@ namespace OOPractice
 {
     public class Truck : Vehicle
     {
-        public Truck(string name, float speed) : base(name, speed)
+        public Truck(string name, float speed)
         {
+            this.name = name;
+            this.speed = speed;
         }
     }
 }
