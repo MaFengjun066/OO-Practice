@@ -3,10 +3,10 @@
     using System;
     public class Car : Vehicle
     {
-        public Car(string name, Engine engine)
+        public Car(string name, IEngine engine)
         {
             this.name = name;
-            this.speed = engine.speed;
+            this.speed = engine.Speed;
         }
     }
 }

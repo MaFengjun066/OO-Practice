@@ -31,7 +31,7 @@ namespace OOPracticeTest
         public void Should_return_message_30_when_driver_drive_car_with_gas()
         {
             //given
-            Driver driver = new Driver(new Car("Cool Car", new Engine("GasolineEngine")));
+            Driver driver = new Driver(new Car("Cool Car", new GasolineEngine()));
             //when
             string message = driver.Drive();
             //then
@@ -41,7 +41,7 @@ namespace OOPracticeTest
         public void Should_return_message_25_when_driver_drive_car_with_electric()
         {
             //given
-            Driver driver = new Driver(new Car("Cool Car", new Engine("ElecticEngine")));
+            Driver driver = new Driver(new Car("Cool Car", new ElecticEngine()));
             //when
             string message = driver.Drive();
             //then
